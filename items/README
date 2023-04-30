@@ -1,0 +1,2 @@
+Able to expose a rest endpoint without a controller or service by including the dependency: spring-boot-starter-data-rest
+It automatically finds all respositories and creates an endpoint that matches the entity anme that is associted with the repository

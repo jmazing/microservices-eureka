@@ -1,0 +1,7 @@
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-feign</artifactId>
+</dependency>
+
+
+The feign cleint package allows you to communciated with microservices in eureka by service name
