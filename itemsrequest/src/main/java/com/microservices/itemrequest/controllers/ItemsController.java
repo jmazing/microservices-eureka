@@ -42,13 +42,15 @@ public class ItemsController {
         return new ResponseEntity<String>(responseBody, HttpStatus.OK);
     }
 
-    // @GetMapping("/getItemsWithFeign")
-    // public ResponseEntity<String> callItemMicroserviceWithFeign() {
+    @GetMapping("/getItemsWithFeign")
+    public ResponseEntity<String> callItemMicroserviceWithFeign() {
 
-    //     ResponseEntity<String> resp = itemService.items();
-    //     System.out.println(resp);
-    //     return resp;
-    // }
+        ResponseEntity<String> resp = itemService.items();
+        System.out.println("response with feign ========================================");
+        System.out.println(resp);
+        System.out.println("response with feign ========================================");
+        return resp;
+    }
 
     
     @GetMapping("/test")
